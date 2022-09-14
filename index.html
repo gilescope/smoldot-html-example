@@ -26,9 +26,12 @@
   </style>
   <link data-trunk rel="copy-dir" href="chainspecs" dest="chainspecs" />
   <link data-trunk rel="inline" href="js/smoldot-bundled-browserify.js" />
-  <link data-trunk rel="inline" href="js/src/index.js" />
+  
+  <!-- <script data-trunk type="module" src="js/src/index.js"></script> -->
+  <!-- <link data-trunk rel="copy-file" href="js/src/index.js" dest="driver.js" /> -->
     <link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" data-keep-debug="true" data-no-demangle="false" />
-</head>
+<link data-trunk rel="inline" href="js/src/index.js" />
+  </head>
 
 Hello world.
 </html>

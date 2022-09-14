@@ -1,0 +1,8 @@
+[[hooks]]
+stage = "pre_build"
+command = "make"
+command_arguments = []
+
+[build]
+filehash = true
+pattern_script = "<script type=\"module\">import init from '{base}{js}';init('{base}{wasm}').then(wasm=>window.wasm=wasm);</script>"
